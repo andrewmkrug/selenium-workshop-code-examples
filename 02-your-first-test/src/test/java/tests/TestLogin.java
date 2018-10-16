@@ -14,9 +14,9 @@ public class TestLogin {
     public void setUp() {
 
         // Windows
-        //System.setProperty("webdriver.chrome.driver", "../driver/chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver", "../drivers/chromedriver.exe");
         // Mac
-        //System.setProperty("webdriver.chrome.driver", "../driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "../drivers/chromedriver-mac-64bit");
 
         driver = new ChromeDriver();
     }
@@ -27,10 +27,12 @@ public class TestLogin {
         driver.findElement(By.id("username")).sendKeys("tomsmith");
         driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
         driver.findElement(By.cssSelector("button")).click();
+
     }
 
     @After
     public void tearDown() {
         driver.quit();
     }
+
 }

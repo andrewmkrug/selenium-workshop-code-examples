@@ -7,6 +7,6 @@ choco install firefox -y
 choco install googlechrome -y
 choco install phantomjs -y
 choco install selenium-all-drivers -y
-choco install jdk8 -y
+choco install jdk -y
 choco install maven -y
 SETX PATH "%PATH%;C:\tools\selenium"
