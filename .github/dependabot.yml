@@ -1,0 +1,72 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/01-init"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.testng:testng
+    versions:
+    - 7.3.0
+- package-ecosystem: maven
+  directory: "/02-your-first-test"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.testng:testng
+    versions:
+    - 7.3.0
+- package-ecosystem: maven
+  directory: "/03-your-first-test-assertion"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.testng:testng
+    versions:
+    - 7.3.0
+- package-ecosystem: maven
+  directory: "/04-page-objects"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.testng:testng
+    versions:
+    - 7.3.0
+- package-ecosystem: maven
+  directory: "/05-base-page-object"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.testng:testng
+    versions:
+    - 7.3.0
+- package-ecosystem: maven
+  directory: "/06-explicit-waits"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.testng:testng
+    versions:
+    - 7.3.0
+- package-ecosystem: maven
+  directory: "/07-framework"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.testng:testng
+    versions:
+    - 7.3.0
